@@ -8,7 +8,7 @@ const PORT = process.env.PORT
 const app = express()
 app.use(cors())
 
-app.get('/users' , (req, res) => {
+app.get('/api/users' , (req, res) => {
     res.status(200).json(data.users)
 })
 
