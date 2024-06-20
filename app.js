@@ -12,6 +12,10 @@ app.get('/api/users' , (req, res) => {
     res.status(200).json(data.users)
 })
 
+app.get('/api/products' , (req, res) => {
+    res.status(200).json(data.products)
+})
+
 app.listen(PORT, () => {
     console.log(`Server Listening on port ${PORT}`);
 })
